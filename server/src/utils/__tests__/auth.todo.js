@@ -18,9 +18,12 @@ test('isPasswordAllowed only allows some passwords', () => {
 })
 
 test('userToJSON excludes secure properties', () => {
-  const user = {
+  const safeUser = {
     id: 'some-id',
     username: 'sarah',
+  }
+  const user = {
+    ...safeUser,
     exp: new Date(),
     iat: new Date(),
     hash: 'some really long string',
@@ -28,10 +31,7 @@ test('userToJSON excludes secure properties', () => {
   }
   const jsonUser = userToJSON(user)
 
-  expect(jsonUser).toEqual({
-    id: 'some-id',
-    username: 'sarah',
-  })
+  expect(jsonUser).toEqual(safeUser)
 })
 
 //////// Elaboration & Feedback /////////
