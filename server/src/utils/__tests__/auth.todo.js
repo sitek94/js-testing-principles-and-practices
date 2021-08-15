@@ -44,7 +44,7 @@ test('userToJSON excludes secure properties', () => {
 http://ws.kcd.im/?ws=Testing&e=auth%20util&em=
 */
 test.skip('I submitted my elaboration and feedback', () => {
-  const submitted = false // change this when you've submitted!
+  const submitted = true // change this when you've submitted!
   expect(submitted).toBe(true)
 })
 ////////////////////////////////
