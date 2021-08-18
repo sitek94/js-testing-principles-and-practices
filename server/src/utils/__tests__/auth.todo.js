@@ -1,20 +1,20 @@
 const {isPasswordAllowed, userToJSON} = require('../auth')
 
-test('isPasswordAllowed only allows some passwords', () => {
-  // Empty string
-  expect(isPasswordAllowed('')).toBe(false)
+describe('isPasswordAllowed', () => {
+  const disallowedPasswords = ['', '123456', '123456789', 'abcdefghi']
+  const allowedPasswords = ['abcd1234']
 
-  // Too short
-  expect(isPasswordAllowed('123456')).toBe(false)
+  disallowedPasswords.forEach((pwd) => {
+    it(`"${pwd} should disallow password`, () => {
+      expect(isPasswordAllowed(pwd)).toBe(false)
+    })
+  })
 
-  // Missing alphabetical character
-  expect(isPasswordAllowed('123456789')).toBe(false)
-
-  // Missing numeric character
-  expect(isPasswordAllowed('abcdefghi')).toBe(false)
-
-  // Correct
-  expect(isPasswordAllowed('abcd1234')).toBe(true)
+  allowedPasswords.forEach((pwd) => {
+    it(`"${pwd} should allow password`, () => {
+      expect(isPasswordAllowed(pwd)).toBe(true)
+    })
+  })
 })
 
 test('userToJSON excludes secure properties', () => {
