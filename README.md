@@ -9,7 +9,7 @@ This is a repo from Kent C. Dodds workshop - I am NOT the author of the code.
 ## Progress
 
 - [x] Intro to Testing
-- [ ] Unit Tests
+- [x] Unit Tests
 - [ ] Mocks
 - [ ] Testing Practices
 - [ ] Integration Tests
