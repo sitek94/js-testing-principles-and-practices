@@ -3,7 +3,6 @@ node_modules
 package-lock.json
 coverage
 build
-.DS_Store
 .env
 *.log
 npm-debug.log*
@@ -20,3 +19,6 @@ dist
 /other/configuration/calculator/cypress/screenshots
 /other/configuration/calculator.solution/cypress/videos
 /other/configuration/calculator.solution/cypress/screenshots
+
+# IDE
+.idea
