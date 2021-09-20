@@ -1,10 +1,10 @@
 # JavaScript Testing Practices and Principles
 
-This is a repo from Kent C. Dodds workshop - I am NOT the author of the code.
+This is a repo from Kent C. Dodds workshop - I am NOT the author of the code, all I did is solved some exercises.
 
-- [original repo](https://frontendmasters.com/courses/testing-practices-principles/)
+- [original repo](https://github.com/kentcdodds/testing-workshop)
 - [original readme and installation instructions](https://github.com/kentcdodds/testing-workshop/blob/master/README.md)
-- [workshop](https://github.com/kentcdodds/testing-workshop)
+- [workshop](https://frontendmasters.com/courses/testing-practices-principles/)
 
 ## Progress
 
@@ -12,5 +12,5 @@ This is a repo from Kent C. Dodds workshop - I am NOT the author of the code.
 - [x] Unit Tests
 - [x] Mocks
 - [x] Testing Practices
-- [ ] Integration Tests
+- [x] Integration Tests
 - [ ] Wrapping Up
