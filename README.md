@@ -10,7 +10,7 @@ This is a repo from Kent C. Dodds workshop - I am NOT the author of the code.
 
 - [x] Intro to Testing
 - [x] Unit Tests
-- [ ] Mocks
-- [ ] Testing Practices
+- [x] Mocks
+- [x] Testing Practices
 - [ ] Integration Tests
 - [ ] Wrapping Up

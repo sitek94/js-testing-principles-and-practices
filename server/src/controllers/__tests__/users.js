@@ -2,35 +2,9 @@ import {omit} from 'lodash'
 import {initDb, generate} from 'til-server-test-utils'
 import * as usersController from '../users'
 import db from '../../utils/db'
+import {setup} from '../../utils/setup'
 
-// this setup is common across controllers, so it may be useful to
-// add this to the utils, but I'll leave it here for you :)
-function setup() {
-  const req = {
-    body: {},
-  }
-  const res = {}
-  Object.assign(res, {
-    status: jest.fn(
-      function status() {
-        return this
-      }.bind(res),
-    ),
-    json: jest.fn(
-      function json() {
-        return this
-      }.bind(res),
-    ),
-    send: jest.fn(
-      function send() {
-        return this
-      }.bind(res),
-    ),
-  })
-  return {req, res}
-}
-
-const safeUser = u => omit(u, ['salt', 'hash'])
+const safeUser = (u) => omit(u, ['salt', 'hash'])
 
 beforeEach(() => initDb())
 
