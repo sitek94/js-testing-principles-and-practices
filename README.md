@@ -13,4 +13,4 @@ This is a repo from Kent C. Dodds workshop - I am NOT the author of the code, al
 - [x] Mocks
 - [x] Testing Practices
 - [x] Integration Tests
-- [ ] Wrapping Up
+- [x] Wrapping Up
